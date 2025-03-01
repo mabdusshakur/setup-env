@@ -25,4 +25,12 @@
     Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
     ```
 
-    Change `xdebug.start_with_request=yes` to `xdebug.start_with_request=trigger` in your `php.ini` file.
+    Change
+   ```ini
+   xdebug.start_with_request=yes
+   ```
+   to
+   ```ini
+   xdebug.start_with_request=trigger
+   ```
+   in your `php.ini` file.
